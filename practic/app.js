@@ -44,7 +44,7 @@ const personalMovieDB = {
     },
     writeYourGenres: function() {
         for (let i = 1; i < 2; i++) {
-            let genres = prompt(`Ваш любимый жанр через запятую`, '').toLocaleLowerCase();
+            let genres = prompt(`Ваш любимый жанр через запятую`, '').toLowerCase();
 
             if (genres != null && genres != '') {
                 personalMovieDB.genres = genres.split(', ');
